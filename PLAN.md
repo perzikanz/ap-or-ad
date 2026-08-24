@@ -30,9 +30,12 @@ League of Legends のチャンピオンの主なダメージ源が AP か AD か
 判定手順:
 
 1. Data Dragon の `item.json` から、各アイテムを AP / AD / どちらでもない に分類する
-   - `stats.FlatMagicDamageMod > 0` → AP アイテム
-   - `stats.FlatPhysicalDamageMod > 0` → AD アイテム
-   - 両方 0（タンク装備・ブーツ等）→ ノーカウント
+   - `stats.FlatMagicDamageMod > 0` かつ `FlatPhysicalDamageMod == 0` → AP アイテム
+   - `stats.FlatPhysicalDamageMod > 0` かつ `FlatMagicDamageMod == 0` → AD アイテム
+   - 両方 0（タンク装備・ブーツ等）→ ノーカウント（NONE）
+   - 両方 > 0（魔力・物理の両方を持つ稀なアイテム）→ ノーカウント（NONE）扱いとし、
+     分類スクリプトで警告ログを出す。AP/AD どちらか一方に寄せると偏るため、
+     ap_ratio の計算からは除外する（該当が出た場合は目視で要確認）。
    - ※ フィールド名は実データで要検証（後述の「検証タスク」参照）
 2. 各チャンピオンについて、統計上の主要ビルド（コアアイテム3個）を特定する
 3. スコアを計算する
