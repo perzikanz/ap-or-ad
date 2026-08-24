@@ -122,10 +122,7 @@ async function main() {
   const out: ChampionsFile = {
     patch,
     generated_at: new Date().toISOString().slice(0, 10),
-    // source は常に現在のパッチから再生成する。既存値を温存すると、
-    // 初回生成後にパッチが上がっても source 内のバージョン番号だけ古いまま
-    // 残ってしまう（top-level の patch とズレる）。テンプレート文言も
-    // ここで自動的に置き換わる。
+    // 既存値を温存すると patch 更新後もここだけ古いまま残るため毎回再生成する。
     source: `Data Dragon patch ${patch}（core_items は手入力）`,
     thresholds: { ap: THRESHOLDS.ap, ad: THRESHOLDS.ad },
     champions,

@@ -15,10 +15,6 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      # Type-checks the whole repo, including scripts/**/*.ts, which
-      # `next build` (run by the Vercel preview) does not reliably cover.
-      # `next build` itself is validated by the Vercel preview deployment,
-      # so it is intentionally not duplicated here.
+      # next build（＝実ビルド）は Vercel プレビューが担うのでここでは重複させない。
       - run: npx tsc --noEmit
-      # `npm run lint` can be added once an ESLint config is committed;
-      # `next lint` is skipped for now because no config exists yet.
+      - run: npm run lint
