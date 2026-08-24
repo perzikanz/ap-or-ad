@@ -29,7 +29,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          # Fetch full history so the reviewer can compute a merge-base and
+          # run `git diff origin/main...HEAD` instead of reading every file.
+          fetch-depth: 0
 
       - name: Run Claude Code Review
         id: claude-review
