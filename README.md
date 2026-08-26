@@ -66,10 +66,12 @@ npm run data:all
 
 - 使用してよい画像は Data Dragon が配信するチャンピオンアイコンのみ。Riot のロゴ・トレードマークは使いません。
 - サイト名・リポジトリ名・ドメインに Riot の商標／チャンピオン名を含めません。
-- フッターに Riot の "Legal Jibber Jabber" 第6条の帰属表示を掲載します。
-  **本文は公式サイト（https://www.riotgames.com/en/legal 第6条）から逐語でコピーし、
-  `[The title of your Project]` を「AP or AD」に置換すること。** 記憶や推測で書かないこと。
-  （現状フッターは暫定文言のプレースホルダーです。公開前に差し替えてください。）
+- フッターに Riot 指定の表記文を **2種類**（Legal Jibber Jabber 第6条 /
+  Developer General Policies の免責文）原文のまま掲載します。
 - フッターにデータのパッチバージョンを明記します。
+- Data Dragon の JSON とチャンピオンアイコンをリポジトリに同梱していますが、
+  これらは Riot が権利を持つアセットで、再許諾できません。
+  `LICENSE` を追加する場合は自作コードのみを対象とし、`public/champions/` と
+  `data/raw/` を除外してください（詳細は [`CLAUDE.md`](./CLAUDE.md)「リポジトリ同梱の可否」）。
 
 公開前チェックリストは [`CLAUDE.md`](./CLAUDE.md) を参照。
