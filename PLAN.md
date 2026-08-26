@@ -214,12 +214,12 @@ ap-or-ad/
 ### Phase 0: リポジトリ整備（30分）
 
 - [x] GitHub にリポジトリ作成（`ap-or-ad`、public）
-- [ ] Next.js + TypeScript + Tailwind の雛形を作成
+- [x] Next.js + TypeScript + Tailwind の雛形を作成
 - [x] `CLAUDE.md` / `PLAN.md` / `README.md` を配置
 - [x] `.gitignore` 設定（`node_modules`, `.next`, `.env.local`）
-- [ ] Vercel に接続してデプロイが通ることを確認（中身は空でよい）
+- [x] Vercel に接続してデプロイが通ることを確認（中身は空でよい）
 
-**完了条件**: `https://ap-or-ad.vercel.app` が 200 を返す
+**完了条件**: `https://ap-or-ad.vercel.app` が 200 を返す → OK!
 
 ### Phase 1: データ基盤（2〜3時間）
 
