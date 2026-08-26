@@ -1,0 +1,7 @@
+{
+  "patch": "unknown",
+  "generated_at": null,
+  "source": "template (no data yet) — run scripts to populate",
+  "thresholds": { "ap": 0.7, "ad": 0.3 },
+  "champions": []
+}
