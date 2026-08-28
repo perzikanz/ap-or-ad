@@ -50,14 +50,16 @@ async function main() {
   const hasPhysical = items.some(
     (it) => (it.stats?.[PHYSICAL_FIELD] ?? 0) > 0,
   );
-  hasMagic
-    ? ok(`${MAGIC_FIELD} > 0 のアイテムあり`)
-    : warn(`${MAGIC_FIELD} > 0 のアイテムが見つからない → フィールド名を要確認`);
-  hasPhysical
-    ? ok(`${PHYSICAL_FIELD} > 0 のアイテムあり`)
-    : warn(
-        `${PHYSICAL_FIELD} > 0 のアイテムが見つからない → フィールド名を要確認`,
-      );
+  if (hasMagic) {
+    ok(`${MAGIC_FIELD} > 0 のアイテムあり`);
+  } else {
+    warn(`${MAGIC_FIELD} > 0 のアイテムが見つからない → フィールド名を要確認`);
+  }
+  if (hasPhysical) {
+    ok(`${PHYSICAL_FIELD} > 0 のアイテムあり`);
+  } else {
+    warn(`${PHYSICAL_FIELD} > 0 のアイテムが見つからない → フィールド名を要確認`);
+  }
 
   // 3. champion 総数
   console.log("[3] champion.json 総数");

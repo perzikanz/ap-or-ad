@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* AP = 青系（マジックダメージ）, AD = 橙/赤系（物理ダメージ） */
+  --color-ap: #3b82f6;
+  --color-ap-soft: #1e3a8a;
+  --color-ad: #f97316;
+  --color-ad-soft: #7c2d12;
+}
 
 :root {
   color-scheme: dark;

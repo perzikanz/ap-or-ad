@@ -4,7 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5
+    # major PR は判断待ちでオープンのまま滞留するため、上限が低いと
+    # 後続のマイナー・パッチ更新まで塞き止められる。余裕を持たせる。
+    open-pull-requests-limit: 10
     # minor/patch はまとめて1 PR にし、CI/レビュー回数を抑える。
     # major は破壊的変更を含みうるので個別 PR で気づけるようにグループから外す。
     groups:
