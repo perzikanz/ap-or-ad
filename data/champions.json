@@ -1,7 +1,1741 @@
 {
-  "patch": "unknown",
-  "generated_at": null,
-  "source": "template (no data yet) — run scripts to populate",
-  "thresholds": { "ap": 0.7, "ad": 0.3 },
-  "champions": []
+  "patch": "16.17.1",
+  "generated_at": "2026-08-26",
+  "source": "Data Dragon patch 16.17.1（core_items は手入力）",
+  "thresholds": {
+    "ap": 0.7,
+    "ad": 0.3
+  },
+  "champions": [
+    {
+      "id": "Aatrox",
+      "name_ja": "エイトロックス",
+      "name_en": "Aatrox",
+      "image": "Aatrox.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ahri",
+      "name_ja": "アーリ",
+      "name_en": "Ahri",
+      "image": "Ahri.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Akali",
+      "name_ja": "アカリ",
+      "name_en": "Akali",
+      "image": "Akali.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Akshan",
+      "name_ja": "アクシャン",
+      "name_en": "Akshan",
+      "image": "Akshan.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Alistar",
+      "name_ja": "アリスター",
+      "name_en": "Alistar",
+      "image": "Alistar.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ambessa",
+      "name_ja": "アンベッサ",
+      "name_en": "Ambessa",
+      "image": "Ambessa.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Amumu",
+      "name_ja": "アムム",
+      "name_en": "Amumu",
+      "image": "Amumu.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Anivia",
+      "name_ja": "アニビア",
+      "name_en": "Anivia",
+      "image": "Anivia.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Annie",
+      "name_ja": "アニー",
+      "name_en": "Annie",
+      "image": "Annie.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Aphelios",
+      "name_ja": "アフェリオス",
+      "name_en": "Aphelios",
+      "image": "Aphelios.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ashe",
+      "name_ja": "アッシュ",
+      "name_en": "Ashe",
+      "image": "Ashe.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "AurelionSol",
+      "name_ja": "オレリオン・ソル",
+      "name_en": "Aurelion Sol",
+      "image": "AurelionSol.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Aurora",
+      "name_ja": "オーロラ",
+      "name_en": "Aurora",
+      "image": "Aurora.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Azir",
+      "name_ja": "アジール",
+      "name_en": "Azir",
+      "image": "Azir.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Bard",
+      "name_ja": "バード",
+      "name_en": "Bard",
+      "image": "Bard.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Belveth",
+      "name_ja": "ベル＝ヴェス",
+      "name_en": "Bel'Veth",
+      "image": "Belveth.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Blitzcrank",
+      "name_ja": "ブリッツクランク",
+      "name_en": "Blitzcrank",
+      "image": "Blitzcrank.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Brand",
+      "name_ja": "ブランド",
+      "name_en": "Brand",
+      "image": "Brand.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Braum",
+      "name_ja": "ブラウム",
+      "name_en": "Braum",
+      "image": "Braum.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Briar",
+      "name_ja": "ブライアー",
+      "name_en": "Briar",
+      "image": "Briar.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Caitlyn",
+      "name_ja": "ケイトリン",
+      "name_en": "Caitlyn",
+      "image": "Caitlyn.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Camille",
+      "name_ja": "カミール",
+      "name_en": "Camille",
+      "image": "Camille.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Cassiopeia",
+      "name_ja": "カシオペア",
+      "name_en": "Cassiopeia",
+      "image": "Cassiopeia.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Chogath",
+      "name_ja": "チョ＝ガス",
+      "name_en": "Cho'Gath",
+      "image": "Chogath.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Corki",
+      "name_ja": "コーキ",
+      "name_en": "Corki",
+      "image": "Corki.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Darius",
+      "name_ja": "ダリウス",
+      "name_en": "Darius",
+      "image": "Darius.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Diana",
+      "name_ja": "ダイアナ",
+      "name_en": "Diana",
+      "image": "Diana.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "DrMundo",
+      "name_ja": "ドクター・ムンド",
+      "name_en": "Dr. Mundo",
+      "image": "DrMundo.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Draven",
+      "name_ja": "ドレイヴン",
+      "name_en": "Draven",
+      "image": "Draven.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ekko",
+      "name_ja": "エコー",
+      "name_en": "Ekko",
+      "image": "Ekko.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Elise",
+      "name_ja": "エリス",
+      "name_en": "Elise",
+      "image": "Elise.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Evelynn",
+      "name_ja": "イブリン",
+      "name_en": "Evelynn",
+      "image": "Evelynn.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ezreal",
+      "name_ja": "エズリアル",
+      "name_en": "Ezreal",
+      "image": "Ezreal.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Fiddlesticks",
+      "name_ja": "フィドルスティックス",
+      "name_en": "Fiddlesticks",
+      "image": "Fiddlesticks.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Fiora",
+      "name_ja": "フィオラ",
+      "name_en": "Fiora",
+      "image": "Fiora.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Fizz",
+      "name_ja": "フィズ",
+      "name_en": "Fizz",
+      "image": "Fizz.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Galio",
+      "name_ja": "ガリオ",
+      "name_en": "Galio",
+      "image": "Galio.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Gangplank",
+      "name_ja": "ガングプランク",
+      "name_en": "Gangplank",
+      "image": "Gangplank.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Garen",
+      "name_ja": "ガレン",
+      "name_en": "Garen",
+      "image": "Garen.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Gnar",
+      "name_ja": "ナー",
+      "name_en": "Gnar",
+      "image": "Gnar.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Gragas",
+      "name_ja": "グラガス",
+      "name_en": "Gragas",
+      "image": "Gragas.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Graves",
+      "name_ja": "グレイブス",
+      "name_en": "Graves",
+      "image": "Graves.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Gwen",
+      "name_ja": "グウェン",
+      "name_en": "Gwen",
+      "image": "Gwen.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Hecarim",
+      "name_ja": "ヘカリム",
+      "name_en": "Hecarim",
+      "image": "Hecarim.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Heimerdinger",
+      "name_ja": "ハイマーディンガー",
+      "name_en": "Heimerdinger",
+      "image": "Heimerdinger.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Hwei",
+      "name_ja": "フェイ",
+      "name_en": "Hwei",
+      "image": "Hwei.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Illaoi",
+      "name_ja": "イラオイ",
+      "name_en": "Illaoi",
+      "image": "Illaoi.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Irelia",
+      "name_ja": "イレリア",
+      "name_en": "Irelia",
+      "image": "Irelia.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ivern",
+      "name_ja": "アイバーン",
+      "name_en": "Ivern",
+      "image": "Ivern.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Janna",
+      "name_ja": "ジャンナ",
+      "name_en": "Janna",
+      "image": "Janna.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "JarvanIV",
+      "name_ja": "ジャーヴァンⅣ",
+      "name_en": "Jarvan IV",
+      "image": "JarvanIV.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Jax",
+      "name_ja": "ジャックス",
+      "name_en": "Jax",
+      "image": "Jax.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Jayce",
+      "name_ja": "ジェイス",
+      "name_en": "Jayce",
+      "image": "Jayce.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Jhin",
+      "name_ja": "ジン",
+      "name_en": "Jhin",
+      "image": "Jhin.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Jinx",
+      "name_ja": "ジンクス",
+      "name_en": "Jinx",
+      "image": "Jinx.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "KSante",
+      "name_ja": "カ・サンテ",
+      "name_en": "K'Sante",
+      "image": "KSante.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kaisa",
+      "name_ja": "カイ＝サ",
+      "name_en": "Kai'Sa",
+      "image": "Kaisa.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kalista",
+      "name_ja": "カリスタ",
+      "name_en": "Kalista",
+      "image": "Kalista.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Karma",
+      "name_ja": "カルマ",
+      "name_en": "Karma",
+      "image": "Karma.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Karthus",
+      "name_ja": "カーサス",
+      "name_en": "Karthus",
+      "image": "Karthus.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kassadin",
+      "name_ja": "カサディン",
+      "name_en": "Kassadin",
+      "image": "Kassadin.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Katarina",
+      "name_ja": "カタリナ",
+      "name_en": "Katarina",
+      "image": "Katarina.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kayle",
+      "name_ja": "ケイル",
+      "name_en": "Kayle",
+      "image": "Kayle.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kayn",
+      "name_ja": "ケイン",
+      "name_en": "Kayn",
+      "image": "Kayn.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kennen",
+      "name_ja": "ケネン",
+      "name_en": "Kennen",
+      "image": "Kennen.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Khazix",
+      "name_ja": "カ＝ジックス",
+      "name_en": "Kha'Zix",
+      "image": "Khazix.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kindred",
+      "name_ja": "キンドレッド",
+      "name_en": "Kindred",
+      "image": "Kindred.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Kled",
+      "name_ja": "クレッド",
+      "name_en": "Kled",
+      "image": "Kled.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "KogMaw",
+      "name_ja": "コグ＝マウ",
+      "name_en": "Kog'Maw",
+      "image": "KogMaw.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Leblanc",
+      "name_ja": "ルブラン",
+      "name_en": "LeBlanc",
+      "image": "Leblanc.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "LeeSin",
+      "name_ja": "リー・シン",
+      "name_en": "Lee Sin",
+      "image": "LeeSin.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Leona",
+      "name_ja": "レオナ",
+      "name_en": "Leona",
+      "image": "Leona.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Lillia",
+      "name_ja": "リリア",
+      "name_en": "Lillia",
+      "image": "Lillia.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Lissandra",
+      "name_ja": "リサンドラ",
+      "name_en": "Lissandra",
+      "image": "Lissandra.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Locke",
+      "name_ja": "ロック",
+      "name_en": "Locke",
+      "image": "Locke.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Lucian",
+      "name_ja": "ルシアン",
+      "name_en": "Lucian",
+      "image": "Lucian.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Lulu",
+      "name_ja": "ルル",
+      "name_en": "Lulu",
+      "image": "Lulu.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Lux",
+      "name_ja": "ラックス",
+      "name_en": "Lux",
+      "image": "Lux.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Malphite",
+      "name_ja": "マルファイト",
+      "name_en": "Malphite",
+      "image": "Malphite.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Malzahar",
+      "name_ja": "マルザハール",
+      "name_en": "Malzahar",
+      "image": "Malzahar.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Maokai",
+      "name_ja": "マオカイ",
+      "name_en": "Maokai",
+      "image": "Maokai.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "MasterYi",
+      "name_ja": "マスター・イー",
+      "name_en": "Master Yi",
+      "image": "MasterYi.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Mel",
+      "name_ja": "メル",
+      "name_en": "Mel",
+      "image": "Mel.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Milio",
+      "name_ja": "ミリオ",
+      "name_en": "Milio",
+      "image": "Milio.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "MissFortune",
+      "name_ja": "ミス・フォーチュン",
+      "name_en": "Miss Fortune",
+      "image": "MissFortune.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "MonkeyKing",
+      "name_ja": "ウーコン",
+      "name_en": "Wukong",
+      "image": "MonkeyKing.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Mordekaiser",
+      "name_ja": "モルデカイザー",
+      "name_en": "Mordekaiser",
+      "image": "Mordekaiser.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Morgana",
+      "name_ja": "モルガナ",
+      "name_en": "Morgana",
+      "image": "Morgana.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Naafiri",
+      "name_ja": "ナフィーリ",
+      "name_en": "Naafiri",
+      "image": "Naafiri.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nami",
+      "name_ja": "ナミ",
+      "name_en": "Nami",
+      "image": "Nami.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nasus",
+      "name_ja": "ナサス",
+      "name_en": "Nasus",
+      "image": "Nasus.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nautilus",
+      "name_ja": "ノーチラス",
+      "name_en": "Nautilus",
+      "image": "Nautilus.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Neeko",
+      "name_ja": "ニーコ",
+      "name_en": "Neeko",
+      "image": "Neeko.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nidalee",
+      "name_ja": "ニダリー",
+      "name_en": "Nidalee",
+      "image": "Nidalee.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nilah",
+      "name_ja": "ニーラ",
+      "name_en": "Nilah",
+      "image": "Nilah.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nocturne",
+      "name_ja": "ノクターン",
+      "name_en": "Nocturne",
+      "image": "Nocturne.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Nunu",
+      "name_ja": "ヌヌ＆ウィルンプ",
+      "name_en": "Nunu & Willump",
+      "image": "Nunu.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Olaf",
+      "name_ja": "オラフ",
+      "name_en": "Olaf",
+      "image": "Olaf.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Orianna",
+      "name_ja": "オリアナ",
+      "name_en": "Orianna",
+      "image": "Orianna.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ornn",
+      "name_ja": "オーン",
+      "name_en": "Ornn",
+      "image": "Ornn.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Pantheon",
+      "name_ja": "パンテオン",
+      "name_en": "Pantheon",
+      "image": "Pantheon.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Poppy",
+      "name_ja": "ポッピー",
+      "name_en": "Poppy",
+      "image": "Poppy.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Pyke",
+      "name_ja": "パイク",
+      "name_en": "Pyke",
+      "image": "Pyke.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Qiyana",
+      "name_ja": "キヤナ",
+      "name_en": "Qiyana",
+      "image": "Qiyana.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Quinn",
+      "name_ja": "クイン",
+      "name_en": "Quinn",
+      "image": "Quinn.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Rakan",
+      "name_ja": "ラカン",
+      "name_en": "Rakan",
+      "image": "Rakan.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Rammus",
+      "name_ja": "ラムス",
+      "name_en": "Rammus",
+      "image": "Rammus.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "RekSai",
+      "name_ja": "レク＝サイ",
+      "name_en": "Rek'Sai",
+      "image": "RekSai.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Rell",
+      "name_ja": "レル",
+      "name_en": "Rell",
+      "image": "Rell.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Renata",
+      "name_ja": "レナータ・グラスク",
+      "name_en": "Renata Glasc",
+      "image": "Renata.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Renekton",
+      "name_ja": "レネクトン",
+      "name_en": "Renekton",
+      "image": "Renekton.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Rengar",
+      "name_ja": "レンガー",
+      "name_en": "Rengar",
+      "image": "Rengar.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Riven",
+      "name_ja": "リヴェン",
+      "name_en": "Riven",
+      "image": "Riven.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Rumble",
+      "name_ja": "ランブル",
+      "name_en": "Rumble",
+      "image": "Rumble.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ryze",
+      "name_ja": "ライズ",
+      "name_en": "Ryze",
+      "image": "Ryze.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Samira",
+      "name_ja": "サミーラ",
+      "name_en": "Samira",
+      "image": "Samira.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Sejuani",
+      "name_ja": "セジュアニ",
+      "name_en": "Sejuani",
+      "image": "Sejuani.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Senna",
+      "name_ja": "セナ",
+      "name_en": "Senna",
+      "image": "Senna.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Seraphine",
+      "name_ja": "セラフィーン",
+      "name_en": "Seraphine",
+      "image": "Seraphine.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Sett",
+      "name_ja": "セト",
+      "name_en": "Sett",
+      "image": "Sett.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Shaco",
+      "name_ja": "シャコ",
+      "name_en": "Shaco",
+      "image": "Shaco.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Shen",
+      "name_ja": "シェン",
+      "name_en": "Shen",
+      "image": "Shen.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Shyvana",
+      "name_ja": "シヴァーナ",
+      "name_en": "Shyvana",
+      "image": "Shyvana.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Singed",
+      "name_ja": "シンジド",
+      "name_en": "Singed",
+      "image": "Singed.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Sion",
+      "name_ja": "サイオン",
+      "name_en": "Sion",
+      "image": "Sion.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Sivir",
+      "name_ja": "シヴィア",
+      "name_en": "Sivir",
+      "image": "Sivir.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Skarner",
+      "name_ja": "スカーナー",
+      "name_en": "Skarner",
+      "image": "Skarner.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Smolder",
+      "name_ja": "スモルダー",
+      "name_en": "Smolder",
+      "image": "Smolder.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Sona",
+      "name_ja": "ソナ",
+      "name_en": "Sona",
+      "image": "Sona.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Soraka",
+      "name_ja": "ソラカ",
+      "name_en": "Soraka",
+      "image": "Soraka.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Swain",
+      "name_ja": "スウェイン",
+      "name_en": "Swain",
+      "image": "Swain.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Sylas",
+      "name_ja": "サイラス",
+      "name_en": "Sylas",
+      "image": "Sylas.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Syndra",
+      "name_ja": "シンドラ",
+      "name_en": "Syndra",
+      "image": "Syndra.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "TahmKench",
+      "name_ja": "タム・ケンチ",
+      "name_en": "Tahm Kench",
+      "image": "TahmKench.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Taliyah",
+      "name_ja": "タリヤ",
+      "name_en": "Taliyah",
+      "image": "Taliyah.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Talon",
+      "name_ja": "タロン",
+      "name_en": "Talon",
+      "image": "Talon.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Taric",
+      "name_ja": "タリック",
+      "name_en": "Taric",
+      "image": "Taric.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Teemo",
+      "name_ja": "ティーモ",
+      "name_en": "Teemo",
+      "image": "Teemo.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Thresh",
+      "name_ja": "スレッシュ",
+      "name_en": "Thresh",
+      "image": "Thresh.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Tristana",
+      "name_ja": "トリスターナ",
+      "name_en": "Tristana",
+      "image": "Tristana.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Trundle",
+      "name_ja": "トランドル",
+      "name_en": "Trundle",
+      "image": "Trundle.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Tryndamere",
+      "name_ja": "トリンダメア",
+      "name_en": "Tryndamere",
+      "image": "Tryndamere.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "TwistedFate",
+      "name_ja": "ツイステッド・フェイト",
+      "name_en": "Twisted Fate",
+      "image": "TwistedFate.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Twitch",
+      "name_ja": "トゥイッチ",
+      "name_en": "Twitch",
+      "image": "Twitch.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Udyr",
+      "name_ja": "ウディア",
+      "name_en": "Udyr",
+      "image": "Udyr.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Urgot",
+      "name_ja": "アーゴット",
+      "name_en": "Urgot",
+      "image": "Urgot.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Varus",
+      "name_ja": "ヴァルス",
+      "name_en": "Varus",
+      "image": "Varus.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Vayne",
+      "name_ja": "ヴェイン",
+      "name_en": "Vayne",
+      "image": "Vayne.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Veigar",
+      "name_ja": "ベイガー",
+      "name_en": "Veigar",
+      "image": "Veigar.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Velkoz",
+      "name_ja": "ヴェル＝コズ",
+      "name_en": "Vel'Koz",
+      "image": "Velkoz.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Vex",
+      "name_ja": "ヴェックス",
+      "name_en": "Vex",
+      "image": "Vex.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Vi",
+      "name_ja": "ヴァイ",
+      "name_en": "Vi",
+      "image": "Vi.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Viego",
+      "name_ja": "ヴィエゴ",
+      "name_en": "Viego",
+      "image": "Viego.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Viktor",
+      "name_ja": "ビクター",
+      "name_en": "Viktor",
+      "image": "Viktor.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Vladimir",
+      "name_ja": "ブラッドミア",
+      "name_en": "Vladimir",
+      "image": "Vladimir.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Volibear",
+      "name_ja": "ボリベア",
+      "name_en": "Volibear",
+      "image": "Volibear.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Warwick",
+      "name_ja": "ワーウィック",
+      "name_en": "Warwick",
+      "image": "Warwick.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Xayah",
+      "name_ja": "ザヤ",
+      "name_en": "Xayah",
+      "image": "Xayah.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Xerath",
+      "name_ja": "ゼラス",
+      "name_en": "Xerath",
+      "image": "Xerath.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "XinZhao",
+      "name_ja": "シン・ジャオ",
+      "name_en": "Xin Zhao",
+      "image": "XinZhao.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Yasuo",
+      "name_ja": "ヤスオ",
+      "name_en": "Yasuo",
+      "image": "Yasuo.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Yone",
+      "name_ja": "ヨネ",
+      "name_en": "Yone",
+      "image": "Yone.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Yorick",
+      "name_ja": "ヨリック",
+      "name_en": "Yorick",
+      "image": "Yorick.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Yunara",
+      "name_ja": "ユナラ",
+      "name_en": "Yunara",
+      "image": "Yunara.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Yuumi",
+      "name_ja": "ユーミ",
+      "name_en": "Yuumi",
+      "image": "Yuumi.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zaahen",
+      "name_ja": "ザーヘン",
+      "name_en": "Zaahen",
+      "image": "Zaahen.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zac",
+      "name_ja": "ザック",
+      "name_en": "Zac",
+      "image": "Zac.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zed",
+      "name_ja": "ゼド",
+      "name_en": "Zed",
+      "image": "Zed.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zeri",
+      "name_ja": "ゼリ",
+      "name_en": "Zeri",
+      "image": "Zeri.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Ziggs",
+      "name_ja": "ジグス",
+      "name_en": "Ziggs",
+      "image": "Ziggs.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zilean",
+      "name_ja": "ジリアン",
+      "name_en": "Zilean",
+      "image": "Zilean.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zoe",
+      "name_ja": "ゾーイ",
+      "name_en": "Zoe",
+      "image": "Zoe.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    },
+    {
+      "id": "Zyra",
+      "name_ja": "ザイラ",
+      "name_en": "Zyra",
+      "image": "Zyra.png",
+      "answer": "",
+      "ap_ratio": null,
+      "core_items": [],
+      "excluded": false
+    }
+  ]
 }

@@ -36,7 +36,7 @@ League of Legends のチャンピオンの主なダメージ源が AP か AD か
    - 両方 > 0（魔力・物理の両方を持つ稀なアイテム）→ ノーカウント（NONE）扱いとし、
      分類スクリプトで警告ログを出す。AP/AD どちらか一方に寄せると偏るため、
      ap_ratio の計算からは除外する（該当が出た場合は目視で要確認）。
-   - ※ フィールド名は実データで要検証（後述の「検証タスク」参照）
+   - ※ フィールド名は実データで検証済み（後述の「検証タスク」参照）
 2. 各チャンピオンについて、統計上の主要ビルド（コアアイテム3個）を特定する
 3. スコアを計算する
 
@@ -198,14 +198,30 @@ ap-or-ad/
 
 ### 検証タスク（実装前に必ず実行）
 
-以下は会話時点で未検証。Claude Code は実装前に実データを取得して確認すること。
+`npm run verify:data` で実行する。結果はスクリプトのログに残る。
+想定と違えば本ファイルを更新すること。
 
-1. `api/versions.json` が現在も生きているか、最新バージョン文字列は何か
-2. `item.json` の stats フィールド名が `FlatMagicDamageMod` / `FlatPhysicalDamageMod` で正しいか
-3. `champion.json` のチャンピオン総数（172体前後の想定）
-4. 画像 URL のパス構造が上記で正しいか
+**2026-08-27 実施 — 4項目すべて想定どおり（パッチ 16.17.1）:**
 
-検証結果は `scripts/verify-data.ts` の出力としてログに残し、想定と違えば本ファイルを更新すること。
+| # | 項目                                                          | 結果                                    |
+| - | ------------------------------------------------------------- | --------------------------------------- |
+| 1 | `api/versions.json` が生きているか / 最新バージョン           | ✓ 稼働中。先頭 = `16.17.1`              |
+| 2 | `FlatMagicDamageMod` / `FlatPhysicalDamageMod` というフィールド名か | ✓ 両方とも実在                    |
+| 3 | `champion.json` のチャンピオン総数                            | ✓ **173体**（想定172から+1）            |
+| 4 | 画像 URL のパス構造                                           | ✓ `.../img/champion/Aatrox.png` が image/png を返す |
+
+以降、本ファイル中の「172体」は **173体** と読み替えること（`scripts/verify-data.ts` の
+`EXPECTED_CHAMPION_COUNT` は ±15 の許容幅を持つので、新チャンピオン追加のたびに直す必要はない）。
+
+**アイテム分類の実測値（`npm run classify:items`、パッチ 16.17.1）:**
+
+- AP=177 / AD=183 / NONE=508（全868件）
+- 魔力・物理の**両方 > 0** のアイテムが **16件** 出た。すべて NONE 扱いで ap_ratio から除外済み。
+  内訳はスタティック シヴ / グインソー レイジブレード / ヘクステック ガンブレード /
+  金のへら系 / ルーングレイブ / トワイライト・エッジ / トリニティ フォース と、
+  それらのアリーナ・URF 等モード別 ID（`223087` のように接頭辞が付く重複エントリ）。
+  Phase 2 でこれらがコアアイテムに入るチャンピオンは、ap_ratio の分母が痩せるため
+  `note` に判断根拠を書き残すこと。
 
 ---
 
@@ -214,22 +230,23 @@ ap-or-ad/
 ### Phase 0: リポジトリ整備（30分）
 
 - [x] GitHub にリポジトリ作成（`ap-or-ad`、public）
-- [ ] Next.js + TypeScript + Tailwind の雛形を作成
+- [x] Next.js + TypeScript + Tailwind の雛形を作成
 - [x] `CLAUDE.md` / `PLAN.md` / `README.md` を配置
 - [x] `.gitignore` 設定（`node_modules`, `.next`, `.env.local`）
-- [ ] Vercel に接続してデプロイが通ることを確認（中身は空でよい）
+- [x] Vercel に接続してデプロイが通ることを確認（中身は空でよい）
 
-**完了条件**: `https://ap-or-ad.vercel.app` が 200 を返す
+**完了条件**: `https://ap-or-ad.vercel.app` が 200 を返す → OK!
 
 ### Phase 1: データ基盤（2〜3時間）
 
-- [ ] 上記「検証タスク」を実行し、結果を記録
-- [ ] `scripts/fetch-ddragon.ts`: 最新バージョン取得 → champion.json / item.json を `data/raw/` に保存
-- [ ] `scripts/classify-items.ts`: アイテムを AP/AD/NONE に分類し `items-classified.json` を生成
-- [ ] チャンピオン画像を `public/champions/` に一括ダウンロード
-- [ ] `data/champions.json` の雛形を生成（`answer` と `core_items` は空欄）
+- [x] 上記「検証タスク」を実行し、結果を記録
+- [x] `scripts/fetch-ddragon.ts`: 最新バージョン取得 → champion.json / item.json を `data/raw/` に保存
+- [x] `scripts/classify-items.ts`: アイテムを AP/AD/NONE に分類し `items-classified.json` を生成
+- [x] チャンピオン画像を `public/champions/` に一括ダウンロード
+- [x] `data/champions.json` の雛形を生成（`answer` と `core_items` は空欄）
 
-**完了条件**: 全チャンピオン分の空欄付き JSON と、アイテム分類テーブルが揃っている
+**完了条件**: 全チャンピオン分の空欄付き JSON と、アイテム分類テーブルが揃っている → OK
+（パッチ 16.17.1 / 173体 / 画像173枚 5.0MB / アイテム868件）
 
 ### Phase 2: 正解データの入力（人間の作業、実働2〜3時間）
 
@@ -273,11 +290,18 @@ Claude Code は**入力を楽にするツール**を用意する。
 Riot API のレート制限に関する事実:
 
 - 開発用キーは **1秒あたり20コール / 2分あたり100コール**、**24時間で失効**する
+  （⚠ ただし API 規約本文は "A Development Key shall not be permitted to make more than
+  ten (10) network calls every ten (10) seconds" と、ポータル表示よりさらに厳しい数字を
+  規定している。実装時はポータルの数字ではなく**規約側の下限に合わせる**こと）
 - Personal API key は「開発者本人または小規模なプライベートコミュニティ向け」の製品が対象で、
   検証プロセスなしで登録できる。ただしレート制限の引き上げは承認されない
 
-見積もり（未検証の試算）: 1チャンピオンあたり50試合 × 172体 = 約8,600試合。
+見積もり（未検証の試算）: 1チャンピオンあたり50試合 × 173体 = 約8,650試合。
 2分100コール制限がボトルネックとなり **約3時間のバッチ処理**。一晩放置すれば完了する規模。
+規約側の 10コール/10秒 に合わせるとさらに伸びるため、実測してから見積もり直すこと。
+
+**Match-V5 で取得した生データはリポジトリにコミットしない**（`CLAUDE.md`「リポジトリ同梱の可否」参照）。
+コミットしてよいのは集計後の `ap_ratio` / `core_items` だけ。
 
 ---
 

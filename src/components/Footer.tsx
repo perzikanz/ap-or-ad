@@ -2,26 +2,31 @@ import { PATCH } from "@/lib/data";
 
 /**
  * フッター。以下を必ず含める（CLAUDE.md「必ずやること」）:
- *  1. Legal Jibber Jabber 第6条の帰属表示（公式サイトからの正確なコピー）
- *  2. データのパッチバージョン
+ *  1. Legal Jibber Jabber 第6条の帰属表示
+ *  2. Developer General Policies の免責文（API キー取得時点で拘束される）
+ *  3. データのパッチバージョン
  *
- * ⚠ 帰属表示の本文は https://www.riotgames.com/en/legal 第6条から
- *   **逐語でコピーし、[The title of your Project] を "AP or AD" に置換** すること。
- *   記憶や推測で書いてはいけない（CLAUDE.md）。下記はプレースホルダー。
+ * 1 と 2 は Riot が文面を指定しているため、和訳せず原文のまま出す。
+ * プレースホルダ部分（[The title of your Project] / [Your product]）のみ差し替えている。
  */
 export default function Footer() {
   return (
     <footer className="mt-auto border-t border-white/10 px-4 py-6 text-xs leading-relaxed text-white/50">
       <div className="mx-auto max-w-2xl space-y-3">
-        {/* --- 帰属表示（要・公式からの差し替え） --- */}
+        {/* --- Legal Jibber Jabber 第6条（riotgames.com/en/legal） --- */}
         <p data-legal-attribution>
-          {/* TODO(legal): riotgames.com/en/legal 第6条の本文を逐語でここに貼り、
-              [The title of your Project] を「AP or AD」に置換すること。
-              下記は文言確定までの暫定表示。 */}
-          AP or AD は Riot Games の許諾を受けていない非公式のファンプロジェクトです。
-          このプロジェクトは Riot Games または League of Legends の制作・運営に
-          公式に関与するいずれの当事者からも承認・支援を受けていません。
-          （※この段落は Legal Jibber Jabber 第6条の正式な帰属表示に差し替える必要があります。）
+          AP or AD was created under Riot Games&apos; &quot;Legal Jibber
+          Jabber&quot; policy using assets owned by Riot Games. Riot Games does
+          not endorse or sponsor this project.
+        </p>
+
+        {/* --- Developer General Policies（developer.riotgames.com/policies/general） --- */}
+        <p data-legal-disclaimer>
+          AP or AD isn&apos;t endorsed by Riot Games and doesn&apos;t reflect the
+          views or opinions of Riot Games or anyone officially involved in
+          producing or managing Riot Games properties. Riot Games, and all
+          associated properties are trademarks or registered trademarks of Riot
+          Games, Inc.
         </p>
 
         <p>

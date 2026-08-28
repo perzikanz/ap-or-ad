@@ -54,13 +54,37 @@ Riot の Developer General Policies で明確に禁止されています。
 
 ## ✅ 必ずやること
 
-### 帰属表示
+### 帰属表示 — **2種類**を掲載する
 
-Legal Jibber Jabber 第6条で指定された表記文を、サイトのフッターなど**目立つ場所に**掲載すること。
+Riot の規約は**別々の文書で別々の表記文**を要求しており、両方が必要です。
+どちらもサイトのフッターなど**目立つ場所に**掲載すること。
 
-**文面は https://www.riotgames.com/en/legal の第6条から正確にコピーしてください。**
-`[The title of your Project]` の部分をこのプロジェクト名に置き換えて使います。
-記憶や推測で書かないこと。
+**(1) Legal Jibber Jabber 第6条**（ファンプロジェクト全般に必須）
+
+出典 https://www.riotgames.com/en/legal 第6条（2026-08-27 取得）:
+
+> [The title of your Project] was created under Riot Games' "Legal Jibber Jabber" policy
+> using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
+
+`[The title of your Project]` を `AP or AD` に置換して使う。
+
+**(2) Developer General Policies の免責文**（API キーを使う製品に必須）
+
+出典 https://developer.riotgames.com/policies/general （2026-08-27 取得）。
+"Products must display the following disclaimer in a readily visible location":
+
+> [Your product] isn't endorsed by Riot Games and doesn't reflect the views or opinions of
+> Riot Games or anyone officially involved in producing or managing Riot Games properties.
+> Riot Games, and all associated properties are trademarks or registered trademarks of
+> Riot Games, Inc.
+
+`[Your product]` を `AP or AD` に置換して使う。
+これは Personal API key を取得した時点で拘束されるため（`PLAN.md` Phase 5）、
+**最初から両方載せておく**。後から足す運用にすると載せ忘れる。
+
+⚠ どちらも**原文（英語）のまま**掲載すること。和訳を掲げると「指定された表記文を掲載した」
+とは言えなくなる。日本語の説明を添えるのは自由だが、指定文の置き換えにはしない。
+上記は取得日時点の写しなので、公開直前に公式ページを開いて差分がないか目視すること。
 
 ### パッチバージョンの明記
 
@@ -88,19 +112,73 @@ Legal Jibber Jabber 第3条は「**ゲームおよびアプリへの IP の使�
 
 ---
 
+## リポジトリ同梱の可否（2026-08-27 調査）
+
+**結論: Data Dragon の JSON と チャンピオンアイコンを public リポジトリに含めてよい。**
+ただし下記の条件を守ること。
+
+### なぜ良いと言えるか
+
+1. Riot は Data Dragon の**全アセットを patch ごとの tarball
+   （`https://ddragon.leagueoflegends.com/cdn/dragontail-{VER}.tgz`）で配布**しており、
+   開発者が落として自分でホストすることを前提にしている。同梱は例外的な運用ではなく想定された使い方。
+2. Developer General Policies は、使うべきアセットの入手元として Data Dragon を**明示的に指定**している
+   — "Use the following assets in the development and marketing of your product:
+   Data Dragon, Press Kit, TFT Assets, LOR Assets"。
+3. Legal Jibber Jabber・API 規約・General Policies のいずれにも、
+   プロジェクトのソースを public リポジトリで公開することを禁じる条項はない。
+
+### 守ること
+
+- **アセットにオープンソースライセンスを被せない。**
+  Legal Jibber Jabber のライセンスは "non-exclusive, **non-sublicenseable, non-transferable,
+  revocable**"。再許諾できない以上、MIT 等を付けると与えられていない権利を第三者に渡すことになる。
+  現状このリポジトリに `LICENSE` は無い。**追加する場合は自作コードのみを対象とし、
+  `public/champions/` と `data/raw/` を明示的に除外する**こと。
+- **アセット置き場としてのリポジトリにしない。**
+  ライセンスされているのは「プロジェクトの中でアセットを使うこと」。
+  ddragon を丸ごとミラーする、アセットを npm パッケージや Release 成果物として切り出して
+  配る、といった「単体で再配布する」形にはしない。
+- **画像はチャンピオンアイコンのみ。**
+  dragontail にはスプラッシュアート・ローディング画面・スキル/アイテムアイコンも入っているが、
+  同梱するのは `public/champions/` のチャンピオンアイコンだけ（既存ルールどおり）。
+- **いつでも剥がせる状態を保つ。** ライセンスは revocable。
+  `public/champions/` を丸ごと削除しても `SHOW_CHAMPION_IMAGES = false` でビルド・デプロイが
+  通ることを担保する。これが同フラグのもう一つの存在理由。
+- **Match-V5 で取得した生データはコミットしない**（`PLAN.md` Phase 5）。
+  API 規約は終了時に "delete all of the Game Information in Your possession" を求めており、
+  public リポジトリの履歴に入れると事実上削除できなくなる。
+  コミットしてよいのは集計後の `ap_ratio` / `core_items` のみ。
+  Data Dragon は API キー不要の公開 CDN なのでこの条項の射程外だが、Match-V5 は完全に射程内。
+
+### 現状の同梱物
+
+| パス                        | 内容                              | 判定 |
+| --------------------------- | --------------------------------- | ---- |
+| `public/champions/*.png`    | チャンピオンアイコン 173枚（5.0MB） | OK   |
+| `data/raw/champion.*.json`  | ddragon champion.json（ja/en）    | OK   |
+| `data/raw/item.ja_JP.json`  | ddragon item.json                 | OK   |
+| `data/*.json`               | 上記から生成した自作の派生データ  | OK   |
+
+---
+
 ## 公開前チェックリスト
 
 Twitter で共有する前に全項目を確認すること。
 
 - [ ] サイト名・URL・リポジトリ名に Riot の商標／チャンピオン名を含んでいない
 - [ ] Riot のロゴを使っていない（サイト内・favicon・OGP画像すべて）
-- [ ] Legal Jibber Jabber 第6条の表記文をフッターに掲載した（公式サイトからコピーしたもの）
+- [ ] Legal Jibber Jabber 第6条の表記文をフッターに原文のまま掲載した
+- [ ] Developer General Policies の免責文もフッターに原文のまま掲載した
+- [ ] 上記2文を公開直前に公式ページと突き合わせて差分がないことを確認した
 - [ ] `<meta name="keywords">` を設置していない
 - [ ] 広告・課金・投げ銭・アフィリエイトが一切ない
 - [ ] Personal API key を申請済み
 - [ ] LoL 専用の Twitter アカウントを新規作成していない（個人アカウントから投稿する）
 - [ ] データのパッチバージョンをサイト上に明記した
 - [ ] `SHOW_CHAMPION_IMAGES` フラグが機能し、`false` でも遊べる
+- [ ] `public/champions/` を削除した状態でもビルドが通る
+- [ ] `LICENSE` を置くなら Riot アセット（`public/champions/`・`data/raw/`）を除外している
 - [ ] Vercel は Hobby プランのまま（Pro に上げる必要はない）
 
 ---
