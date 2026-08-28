@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "fetch:ddragon": "tsx scripts/fetch-ddragon.ts",
     "classify:items": "tsx scripts/classify-items.ts",
     "build:champions": "tsx scripts/build-champions.ts",
@@ -14,18 +14,17 @@
     "data:all": "npm run fetch:ddragon && npm run classify:items && npm run build:champions && npm run verify:data"
   },
   "dependencies": {
-    "next": "15.5.23",
+    "next": "16.3.3",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "3.3.6",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "22.20.1",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
     "eslint": "9.39.5",
-    "eslint-config-next": "15.5.23",
+    "eslint-config-next": "16.3.2",
     "postcss": "8.5.26",
     "tailwindcss": "4.3.3",
     "tsx": "4.23.12",
