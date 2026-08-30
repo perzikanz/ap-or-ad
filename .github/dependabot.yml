@@ -14,6 +14,18 @@ updates:
         update-types:
           - "minor"
           - "patch"
+    # 上流が未対応でこちら側に打つ手がないメジャー更新は再提示させない。
+    # 対応が入ったらこの記述を消して手動で追従する。
+    ignore:
+      # eslint-config-next が同梱する eslint-plugin-react が、ESLint 10 で
+      # 削除された context.getFilename() を呼ぶため動作しない。
+      - dependency-name: "eslint"
+        update-types:
+          - "version-update:semver-major"
+      # typescript-eslint が "does not support TS 7.0" と明示的に拒否する。
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
