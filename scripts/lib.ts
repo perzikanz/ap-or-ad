@@ -20,7 +20,8 @@ export const PATHS = {
   itemsClassifiedJson: path.join(ROOT, "data", "items-classified.json"),
   rawChampionJa: path.join(ROOT, "data", "raw", "champion.ja_JP.json"),
   rawChampionEn: path.join(ROOT, "data", "raw", "champion.en_US.json"),
-  rawItem: path.join(ROOT, "data", "raw", "item.ja_JP.json"),
+  rawItemJa: path.join(ROOT, "data", "raw", "item.ja_JP.json"),
+  rawItemEn: path.join(ROOT, "data", "raw", "item.en_US.json"),
   rawMeta: path.join(ROOT, "data", "raw", "meta.json"),
   championsImgDir: path.join(ROOT, "public", "champions"),
 };
@@ -114,7 +115,14 @@ export interface DdragonChampionFile {
 
 export interface DdragonItemEntry {
   name: string;
+  /** 別名・英語名・かな読みを ";" 区切りで並べた検索用文字列。空のアイテムもある。 */
+  colloq?: string;
   stats: Record<string, number>;
+  /** マップID -> 使用可否。サモナーズリフトは "11"。 */
+  maps?: Record<string, boolean>;
+  gold?: { total: number; purchasable: boolean };
+  /** このアイテムを素材とする上位アイテムのID。空なら完成品。 */
+  into?: string[];
 }
 
 export interface DdragonItemFile {

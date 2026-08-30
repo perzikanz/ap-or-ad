@@ -5,6 +5,7 @@
  *   data/raw/champion.ja_JP.json
  *   data/raw/champion.en_US.json
  *   data/raw/item.ja_JP.json
+ *   data/raw/item.en_US.json
  *   data/raw/meta.json                 （fetch 時のパッチ・日時）
  *   public/champions/<Champion>.png    （全チャンピオン画像）
  *
@@ -36,17 +37,21 @@ async function main() {
 
   await ensureDir(PATHS.rawDir);
 
-  // --- champion.json（ja / en）と item.json（ja）を取得 ---
-  console.log("[fetch] champion.json (ja_JP, en_US), item.json (ja_JP) ...");
-  const [championJa, championEn, itemJa] = await Promise.all([
+  // --- champion.json / item.json を ja・en 両方取得 ---
+  // 英語名は Phase 2 の入力支援 CLI での検索に使う。統計サイトは英語表記のことが多く、
+  // colloq（別名）に英語名が入っていないアイテムが 4割ほどあるため ja だけでは引けない。
+  console.log("[fetch] champion.json / item.json (ja_JP, en_US) ...");
+  const [championJa, championEn, itemJa, itemEn] = await Promise.all([
     fetchJson<DdragonChampionFile>(DDRAGON.championUrl(version, LOCALES.ja)),
     fetchJson<DdragonChampionFile>(DDRAGON.championUrl(version, LOCALES.en)),
     fetchJson(DDRAGON.itemUrl(version, LOCALES.ja)),
+    fetchJson(DDRAGON.itemUrl(version, LOCALES.en)),
   ]);
 
   await writeJson(PATHS.rawChampionJa, championJa);
   await writeJson(PATHS.rawChampionEn, championEn);
-  await writeJson(PATHS.rawItem, itemJa);
+  await writeJson(PATHS.rawItemJa, itemJa);
+  await writeJson(PATHS.rawItemEn, itemEn);
   await writeJson(PATHS.rawMeta, {
     patch: version,
     fetched_at: new Date().toISOString(),

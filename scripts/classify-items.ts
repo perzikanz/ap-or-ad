@@ -36,10 +36,10 @@ function classify(stats: Record<string, number>): ItemType {
 }
 
 async function main() {
-  const itemFile = await readJsonIfExists<DdragonItemFile>(PATHS.rawItem);
+  const itemFile = await readJsonIfExists<DdragonItemFile>(PATHS.rawItemJa);
   if (!itemFile) {
     throw new Error(
-      `${PATHS.rawItem} がありません。先に npm run fetch:ddragon を実行してください。`,
+      `${PATHS.rawItemJa} がありません。先に npm run fetch:ddragon を実行してください。`,
     );
   }
   const meta = await readMeta();
