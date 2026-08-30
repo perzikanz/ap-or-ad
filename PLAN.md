@@ -109,7 +109,10 @@ ap-or-ad/
 ├── scripts/
 │   ├── fetch-ddragon.ts       # Data Dragon 取得
 │   ├── classify-items.ts      # アイテム分類
+│   ├── champions.ts           # champions.json の読み書きと採点（共有）
 │   ├── build-champions.ts     # 正解ラベル生成
+│   ├── input-champions.ts     # core_items の入力支援 CLI（Phase 2）
+│   ├── item-search.ts         # アイテム名検索（入力支援用）
 │   └── verify-data.ts         # データ整合性チェック
 ├── public/
 │   └── champions/             # チャンピオン画像（ビルド時にDL）
@@ -253,12 +256,32 @@ ap-or-ad/
 これは Claude Code ではなく開発者本人がやる作業。
 Claude Code は**入力を楽にするツール**を用意する。
 
-- [ ] `scripts/build-champions.ts`: `core_items` を入力すると `ap_ratio` と `answer` を
+- [x] `scripts/build-champions.ts`: `core_items` を入力すると `ap_ratio` と `answer` を
       自動計算して `champions.json` を更新するスクリプト
-- [ ] 入力補助（CLI でもよいし、ローカル用の簡易 Web UI でもよい）
+- [x] 入力補助 CLI: `npm run input:champions`
 - [ ] 全チャンピオン入力後、`HYBRID` の該当数を集計して報告
 
 **完了条件**: 全チャンピオンに `answer` が入り、`HYBRID` が何体かわかっている
+
+#### 入力支援 CLI の使い方
+
+```bash
+npm run input:champions               # 未入力のチャンピオンを順に処理する
+npm run input:champions -- --all      # 入力済みも含めて見直す
+npm run input:champions -- --only アーリ   # 名前やIDで対象を絞る
+npm run input:champions -- --status   # 進捗と HYBRID 集計だけ表示する（完了条件の確認用）
+```
+
+- アイテムは日本語名・英語名・略称・ID のどれでも指定できる（`ラバドン` / `dc` / `3089`）。
+  候補が1つに絞れないときだけ番号選択を挟む。
+- 区切りはスペース。`クラーケン スレイヤー` のように名前に空白を含む場合はカンマ区切りにする。
+- 1体確定するごとに `data/champions.json` に保存するので、中断しても入力は消えない。
+- `ap_ratio` / `answer` の計算は `build:champions` と同じコード（`scripts/champions.ts`）を通る。
+- 魔力・物理を両方持つアイテム（`ap_ratio` の分母から外れる。1.1 参照）を入れたときは警告を出す。
+  該当したら `note` に判断根拠を残すこと。
+
+英語名での検索には `data/raw/item.en_US.json` が要る（`npm run fetch:ddragon` で取得される）。
+アイテムの `colloq`（別名）に英語名が入っていないものが4割ほどあり、日本語データだけでは引けないため。
 
 ### Phase 3: MVP（2〜3日）
 

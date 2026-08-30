@@ -46,11 +46,25 @@ npm run verify:data      # 検証タスク（PLAN.md 5章）を実行してロ�
 npm run data:all
 ```
 
-生成後、`data/champions.json` の各チャンピオンに `core_items` を人間が入力し、
-`build:champions` を再実行すると `ap_ratio` と `answer` が自動計算されます（Phase 2）。
-
 > ⚠ `data/champions.json` が空（雛形のまま）でもトップページはビルド・表示できます。
 > データ未生成の状態が UI に明示されます。
+
+## 正解データの入力（PLAN.md Phase 2）
+
+`core_items`（統計上のコアアイテム3個）は人間が統計サイトを見て入力します。
+入力支援 CLI を用意してあるので、JSON を直接編集する必要はありません。
+
+```bash
+npm run input:champions               # 未入力のチャンピオンを順に処理する
+npm run input:champions -- --all      # 入力済みも含めて見直す
+npm run input:champions -- --only アーリ   # 名前やIDで対象を絞る
+npm run input:champions -- --status   # 進捗と HYBRID 集計だけ表示する
+```
+
+アイテムは日本語名・英語名・略称・IDのどれでも指定できます（`ラバドン` / `dc` / `3089`）。
+候補が1つに絞れないときだけ番号選択を挟みます。1体確定するごとに `data/champions.json`
+へ保存するので、途中で中断しても入力は消えません。`ap_ratio` と `answer` は
+`items-classified.json` を使って自動計算されます（`build:champions` と同じ計算）。
 
 ## 設定（`src/config.ts`）
 
