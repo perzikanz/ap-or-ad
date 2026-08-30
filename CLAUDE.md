@@ -6,12 +6,14 @@ Riot の "Legal Jibber Jabber" ポリシーの制約下にあるため、以下�
 詳細な開発計画は `PLAN.md` を参照。
 
 このファイルには **Riot の規約に由来する制約**だけを置く。
-開発作業のルールは `.claude/rules/` 以下に分けてあり、変更するときもそちら側を直す。
+それ以外は下記に分けてあり、変更するときもそちら側を直す。
 
 | ファイル | 内容 | 読み込まれ方 |
 | --- | --- | --- |
 | `.claude/rules/git.md` | コミット / PR の粒度、リポジトリに残す文面の禁止事項 | 毎セッション |
 | `.claude/rules/code-style.md` | コメントの粒度などコードの書き方 | `src/` `scripts/` のコードを開いたときだけ |
+| `.claude/skills/pre-release-check/SKILL.md` | 公開前チェックリストと確認手順 | 公開前に呼び出したときだけ |
+| `docs/riot-assets-in-repo.md` | アセット同梱を可と判断した根拠、同梱物の記録 | 読みに行ったときだけ |
 
 ---
 
@@ -151,22 +153,8 @@ Legal Jibber Jabber 第3条は「**ゲームおよびアプリへの IP の使�
 
 ## 公開前チェックリスト
 
-Twitter で共有する前に全項目を確認すること。
-
-- [ ] サイト名・URL・リポジトリ名に Riot の商標／チャンピオン名を含んでいない
-- [ ] Riot のロゴを使っていない（サイト内・favicon・OGP画像すべて）
-- [ ] Legal Jibber Jabber 第6条の表記文をフッターに原文のまま掲載した
-- [ ] Developer General Policies の免責文もフッターに原文のまま掲載した
-- [ ] 上記2文を公開直前に公式ページと突き合わせて差分がないことを確認した
-- [ ] `<meta name="keywords">` を設置していない
-- [ ] 広告・課金・投げ銭・アフィリエイトが一切ない
-- [ ] Personal API key を申請済み
-- [ ] LoL 専用の Twitter アカウントを新規作成していない（個人アカウントから投稿する）
-- [ ] データのパッチバージョンをサイト上に明記した
-- [ ] `SHOW_CHAMPION_IMAGES` フラグが機能し、`false` でも遊べる
-- [ ] `public/champions/` を削除した状態でもビルドが通る
-- [ ] `LICENSE` を置くなら Riot アセット（`public/champions/`・`data/raw/`）を除外している
-- [ ] Vercel は Hobby プランのまま（Pro に上げる必要はない）
+公開・共有の直前に `.claude/skills/pre-release-check/SKILL.md` の全項目を確認する
+（`/pre-release-check` で呼び出せる）。1項目でも落ちたら公開しない。
 
 ---
 
