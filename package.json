@@ -13,6 +13,7 @@
     "fetch:ddragon": "tsx scripts/fetch-ddragon.ts",
     "classify:items": "tsx scripts/classify-items.ts",
     "build:champions": "tsx scripts/build-champions.ts",
+    "input:champions": "tsx scripts/input-champions.ts",
     "verify:data": "tsx scripts/verify-data.ts",
     "data:all": "npm run fetch:ddragon && npm run classify:items && npm run build:champions && npm run verify:data"
   },
