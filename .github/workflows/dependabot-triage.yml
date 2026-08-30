@@ -16,6 +16,11 @@ permissions:
   contents: write
   pull-requests: write
 
+# checkout しないので gh がカレントディレクトリの git remote から
+# リポジトリを推測できない。引数を取らない gh label create のために明示する。
+env:
+  GH_REPO: ${{ github.repository }}
+
 jobs:
   triage:
     if: github.event.pull_request.user.login == 'dependabot[bot]'
@@ -57,7 +62,7 @@ jobs:
             破壊的変更の有無と移行コストを確認したうえで、マージするか保留するかを判断してください。CI が green でも、CI が検査していない範囲（本番ビルドや実行時の挙動）が壊れている可能性があります。
 
             - 保留する場合はこの PR をオープンのまま残してください
-            - 当面追従しないと決めた場合は `@dependabot ignore this major version` とコメントすると再提示が止まります
+            - 当面追従しないと決めた場合は `.github/dependabot.yml` の `ignore` に追記すると再提示が止まります
             - 移行作業が必要な場合は別ブランチで対応し、その PR をマージしてからこの PR をクローズしてください
 
             ---
