@@ -1,6 +1,6 @@
 {
   "patch": "16.17.1",
-  "generated_at": "2026-08-26",
+  "generated_at": "2026-08-31",
   "source": "Data Dragon patch 16.17.1（core_items は手入力）",
   "thresholds": {
     "ap": 0.7,
@@ -12,9 +12,13 @@
       "name_ja": "エイトロックス",
       "name_en": "Aatrox",
       "image": "Aatrox.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6692,
+        3047,
+        3071
+      ],
       "excluded": false
     },
     {
@@ -22,9 +26,13 @@
       "name_ja": "アーリ",
       "name_en": "Ahri",
       "image": "Ahri.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3118,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -32,9 +40,14 @@
       "name_ja": "アカリ",
       "name_en": "Akali",
       "image": "Akali.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3146,
+        3020,
+        4645
+      ],
+      "note": "ソーサラーシューズが魔力貫通なので",
       "excluded": false
     },
     {
@@ -42,9 +55,13 @@
       "name_ja": "アクシャン",
       "name_en": "Akshan",
       "image": "Akshan.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6676,
+        3006,
+        3031
+      ],
       "excluded": false
     },
     {
@@ -62,9 +79,13 @@
       "name_ja": "アンベッサ",
       "name_en": "Ambessa",
       "image": "Ambessa.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6692,
+        3047,
+        3161
+      ],
       "excluded": false
     },
     {
@@ -72,9 +93,13 @@
       "name_ja": "アムム",
       "name_en": "Amumu",
       "image": "Amumu.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        6653,
+        3047,
+        3068
+      ],
       "excluded": false
     },
     {
@@ -82,9 +107,13 @@
       "name_ja": "アニビア",
       "name_en": "Anivia",
       "image": "Anivia.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        6657,
+        3020,
+        3003
+      ],
       "excluded": false
     },
     {
@@ -92,9 +121,13 @@
       "name_ja": "アニー",
       "name_en": "Annie",
       "image": "Annie.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3118,
+        3020,
+        3152
+      ],
       "excluded": false
     },
     {
@@ -102,9 +135,13 @@
       "name_ja": "アフェリオス",
       "name_en": "Aphelios",
       "image": "Aphelios.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6676,
+        3006,
+        3031
+      ],
       "excluded": false
     },
     {
@@ -112,9 +149,13 @@
       "name_ja": "アッシュ",
       "name_en": "Ashe",
       "image": "Ashe.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        2523,
+        3006,
+        3046
+      ],
       "excluded": false
     },
     {
@@ -122,9 +163,13 @@
       "name_ja": "オレリオン・ソル",
       "name_en": "Aurelion Sol",
       "image": "AurelionSol.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        2503,
+        3020,
+        3116
+      ],
       "excluded": false
     },
     {
@@ -132,9 +177,13 @@
       "name_ja": "オーロラ",
       "name_en": "Aurora",
       "image": "Aurora.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        6655,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -142,9 +191,13 @@
       "name_ja": "アジール",
       "name_en": "Azir",
       "image": "Azir.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3115,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -162,9 +215,14 @@
       "name_ja": "ベル＝ヴェス",
       "name_en": "Bel'Veth",
       "image": "Belveth.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6672,
+        3047,
+        3124
+      ],
+      "note": "4コア目以降はADアイテム",
       "excluded": false
     },
     {
@@ -182,9 +240,13 @@
       "name_ja": "ブランド",
       "name_en": "Brand",
       "image": "Brand.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3116,
+        3020,
+        6653
+      ],
       "excluded": false
     },
     {
@@ -202,9 +264,13 @@
       "name_ja": "ブライアー",
       "name_en": "Briar",
       "image": "Briar.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6676,
+        3047,
+        3748
+      ],
       "excluded": false
     },
     {
@@ -212,9 +278,13 @@
       "name_ja": "ケイトリン",
       "name_en": "Caitlyn",
       "image": "Caitlyn.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        2523,
+        3006,
+        3031
+      ],
       "excluded": false
     },
     {
@@ -222,9 +292,13 @@
       "name_ja": "カミール",
       "name_en": "Camille",
       "image": "Camille.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3078,
+        3047,
+        3074
+      ],
       "excluded": false
     },
     {
@@ -232,9 +306,13 @@
       "name_ja": "カシオペア",
       "name_en": "Cassiopeia",
       "image": "Cassiopeia.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        6657,
+        3009,
+        3003
+      ],
       "excluded": false
     },
     {
@@ -242,9 +320,13 @@
       "name_ja": "チョ＝ガス",
       "name_en": "Cho'Gath",
       "image": "Chogath.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3152,
+        3009,
+        4633
+      ],
       "excluded": false
     },
     {
@@ -252,9 +334,13 @@
       "name_ja": "コーキ",
       "name_en": "Corki",
       "image": "Corki.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3078,
+        3047,
+        3004
+      ],
       "excluded": false
     },
     {
@@ -262,9 +348,13 @@
       "name_ja": "ダリウス",
       "name_en": "Darius",
       "image": "Darius.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3047,
+        3142,
+        3742
+      ],
       "excluded": false
     },
     {
@@ -272,9 +362,13 @@
       "name_ja": "ダイアナ",
       "name_en": "Diana",
       "image": "Diana.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        4646,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -292,9 +386,13 @@
       "name_ja": "ドレイヴン",
       "name_en": "Draven",
       "image": "Draven.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6697,
+        3008,
+        2523
+      ],
       "excluded": false
     },
     {
@@ -302,9 +400,13 @@
       "name_ja": "エコー",
       "name_en": "Ekko",
       "image": "Ekko.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        2510,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -312,9 +414,13 @@
       "name_ja": "エリス",
       "name_en": "Elise",
       "image": "Elise.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        4646,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -322,9 +428,13 @@
       "name_ja": "イブリン",
       "name_en": "Evelynn",
       "image": "Evelynn.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3100,
+        3020,
+        3089
+      ],
       "excluded": false
     },
     {
@@ -332,9 +442,13 @@
       "name_ja": "エズリアル",
       "name_en": "Ezreal",
       "image": "Ezreal.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3078,
+        3158,
+        3004
+      ],
       "excluded": false
     },
     {
@@ -342,9 +456,13 @@
       "name_ja": "フィドルスティックス",
       "name_en": "Fiddlesticks",
       "image": "Fiddlesticks.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3020,
+        3152,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -352,9 +470,13 @@
       "name_ja": "フィオラ",
       "name_en": "Fiora",
       "image": "Fiora.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3074,
+        3047,
+        3078
+      ],
       "excluded": false
     },
     {
@@ -362,9 +484,13 @@
       "name_ja": "フィズ",
       "name_en": "Fizz",
       "image": "Fizz.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3100,
+        3020,
+        3157
+      ],
       "excluded": false
     },
     {
@@ -372,9 +498,13 @@
       "name_ja": "ガリオ",
       "name_en": "Galio",
       "image": "Galio.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3152,
+        3020,
+        4005
+      ],
       "excluded": false
     },
     {
@@ -382,9 +512,13 @@
       "name_ja": "ガングプランク",
       "name_en": "Gangplank",
       "image": "Gangplank.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3508,
+        3047,
+        6676
+      ],
       "excluded": false
     },
     {
@@ -392,9 +526,13 @@
       "name_ja": "ガレン",
       "name_en": "Garen",
       "image": "Garen.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3006,
+        6631,
+        3046
+      ],
       "excluded": false
     },
     {
@@ -402,9 +540,13 @@
       "name_ja": "ナー",
       "name_en": "Gnar",
       "image": "Gnar.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3047,
+        3078,
+        3071
+      ],
       "excluded": false
     },
     {
@@ -412,9 +554,13 @@
       "name_ja": "グラガス",
       "name_en": "Gragas",
       "image": "Gragas.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3100,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -422,9 +568,13 @@
       "name_ja": "グレイブス",
       "name_en": "Graves",
       "image": "Graves.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6697,
+        6676,
+        3036
+      ],
       "excluded": false
     },
     {
@@ -432,9 +582,13 @@
       "name_ja": "グウェン",
       "name_en": "Gwen",
       "image": "Gwen.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        2510,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -442,9 +596,13 @@
       "name_ja": "ヘカリム",
       "name_en": "Hecarim",
       "image": "Hecarim.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3158,
+        3161,
+        6333
+      ],
       "excluded": false
     },
     {
@@ -452,9 +610,13 @@
       "name_ja": "ハイマーディンガー",
       "name_en": "Heimerdinger",
       "image": "Heimerdinger.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        2503,
+        3020,
+        6653
+      ],
       "excluded": false
     },
     {
@@ -462,9 +624,13 @@
       "name_ja": "フェイ",
       "name_en": "Hwei",
       "image": "Hwei.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        2503,
+        3020,
+        4645
+      ],
       "excluded": false
     },
     {
@@ -472,9 +638,13 @@
       "name_ja": "イラオイ",
       "name_en": "Illaoi",
       "image": "Illaoi.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3071,
+        3047,
+        6662
+      ],
       "excluded": false
     },
     {
@@ -482,9 +652,13 @@
       "name_ja": "イレリア",
       "name_en": "Irelia",
       "image": "Irelia.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        3153,
+        3047,
+        3181
+      ],
       "excluded": false
     },
     {
@@ -492,9 +666,13 @@
       "name_ja": "アイバーン",
       "name_en": "Ivern",
       "image": "Ivern.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3158,
+        3107,
+        6617
+      ],
       "excluded": false
     },
     {
@@ -502,9 +680,13 @@
       "name_ja": "ジャンナ",
       "name_en": "Janna",
       "image": "Janna.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AP",
+      "ap_ratio": 1,
+      "core_items": [
+        3009,
+        6617,
+        3107
+      ],
       "excluded": false
     },
     {
@@ -512,9 +694,13 @@
       "name_ja": "ジャーヴァンⅣ",
       "name_en": "Jarvan IV",
       "image": "JarvanIV.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6610,
+        3047,
+        3071
+      ],
       "excluded": false
     },
     {
@@ -542,9 +728,13 @@
       "name_ja": "ジン",
       "name_en": "Jhin",
       "image": "Jhin.png",
-      "answer": "",
-      "ap_ratio": null,
-      "core_items": [],
+      "answer": "AD",
+      "ap_ratio": 0,
+      "core_items": [
+        6697,
+        3009,
+        6676
+      ],
       "excluded": false
     },
     {
