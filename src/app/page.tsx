@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "@/components/Footer";
 import { hasData, normalModeChampions, hybridModeChampions } from "@/lib/data";
 
@@ -22,13 +23,22 @@ export default function Home() {
 
         {dataReady ? (
           <div className="flex w-full flex-col gap-3">
-            {/* Phase 3 で /quiz を実装する。ここはモード選択の土台。 */}
-            <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-left">
-              <p className="text-sm font-semibold">通常モード</p>
-              <p className="mt-1 text-xs text-white/50">
-                出題対象 {normalCount} 体（HYBRID を除く）
-              </p>
-            </div>
+            {normalCount > 0 ? (
+              <Link
+                href="/quiz"
+                className="rounded-2xl border border-white/20 bg-white/10 px-5 py-4 text-left active:scale-[0.98]"
+              >
+                <p className="text-sm font-semibold">通常モード</p>
+                <p className="mt-1 text-xs text-white/50">
+                  出題対象 {normalCount} 体（HYBRID を除く）
+                </p>
+              </Link>
+            ) : (
+              <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-left text-white/50">
+                <p className="text-sm font-semibold">通常モード</p>
+                <p className="mt-1 text-xs">出題対象がまだありません（PLAN.md Phase 2）</p>
+              </div>
+            )}
             <div className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-left">
               <p className="text-sm font-semibold">魔境モード</p>
               <p className="mt-1 text-xs text-white/50">
